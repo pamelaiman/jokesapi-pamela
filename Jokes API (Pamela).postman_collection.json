@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "53626605-d1cf-4f53-9fdf-d8e8e9325631",
+		"name": "Jokes API (Pamela)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37171579"
+	},
+	"item": [
+		{
+			"name": "GET All Jokes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jokes-with-swagger-pr-1.onrender.com/jokes",
+					"protocol": "https",
+					"host": [
+						"jokes-with-swagger-pr-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"jokes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE All Jokes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"type\": \"general\",\r\n        \"setup\": \"What do you call fake spaghetti?\",\r\n        \"punchline\": \"An Impasta!\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jokes-with-swagger-pr-1.onrender.com/jokes/",
+					"protocol": "https",
+					"host": [
+						"jokes-with-swagger-pr-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"jokes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Reset To Original",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"type\": \"general\",\r\n        \"setup\": \"What do you call fake spaghetti?\",\r\n        \"punchline\": \"An Impasta!\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jokes-with-swagger-pr-1.onrender.com/jokes/reset",
+					"protocol": "https",
+					"host": [
+						"jokes-with-swagger-pr-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"jokes",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET A Joke By Id 100",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jokes-with-swagger-pr-1.onrender.com/jokes/{{jokesId}}",
+					"protocol": "https",
+					"host": [
+						"jokes-with-swagger-pr-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"jokes",
+						"{{jokesId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE A Joke",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"type\": \"general\",\r\n        \"setup\": \"What do you call fake spaghetti?\",\r\n        \"punchline\": \"An Impasta!\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jokes-with-swagger-pr-1.onrender.com/jokes/{{jokesId}}",
+					"protocol": "https",
+					"host": [
+						"jokes-with-swagger-pr-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"jokes",
+						"{{jokesId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET First Joke",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jokes-with-swagger-pr-1.onrender.com/jokes/first",
+					"protocol": "https",
+					"host": [
+						"jokes-with-swagger-pr-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"jokes",
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST A New Joke",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"type\": \"general\",\r\n        \"setup\": \"What do you call fake spaghetti?\",\r\n        \"punchline\": \"An Impasta!\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jokes-with-swagger-pr-1.onrender.com/jokes",
+					"protocol": "https",
+					"host": [
+						"jokes-with-swagger-pr-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"jokes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Jokes About Fish",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jokes-with-swagger-pr-1.onrender.com/jokes/search?searchTerm=fish",
+					"protocol": "https",
+					"host": [
+						"jokes-with-swagger-pr-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"jokes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "searchTerm",
+							"value": "fish"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET A Random Joke",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jokes-with-swagger-pr-1.onrender.com/jokes/random",
+					"protocol": "https",
+					"host": [
+						"jokes-with-swagger-pr-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"jokes",
+						"random"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
